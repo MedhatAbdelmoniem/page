@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main id="ma">
+    <header class="main__hero">
+ 
+      <h1>Egypt</h1>
+  
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Section 1" class="your-active-class">
+      <div class="landing__container">
+        <h2>pyramids brief history</h2>
+        <p>The Egyptian pyramids are ancient pyramid-shaped masonry structures located in Egypt. As of November 2008, sources cite either 118 or 138 as the number of identified Egyptian pyramids. Most were built as tombs for the country's pharaohs and their consorts during the Old and Middle Kingdom periods.</p>
+
+        <p>The earliest known Egyptian pyramids are found at Saqqara, northwest of Memphis, although at least one step-pyramid-like structure has been found at Saqqara, dating to the First Dynasty: Mastaba 3808, which has been attributed to the reign of Pharaoh Anedjib, with inscriptions, and other archaeological remains of the period, suggesting there may have been others. The otherwise earliest among these is the Pyramid of Djoser built c. 2630–2610 BC during the Third Dynasty.This pyramid and its surrounding complex are generally considered to be the world's oldest monumental structures constructed of dressed masonry.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Section 2">
+      <div class="landing__container">
+        <h2 id="h2sec2">Pyramid symbolism</h2>
+        <p>The shape of Egyptian pyramids is thought to represent the primordial mound from which the Egyptians believed the earth was created. The shape of a pyramid is also thought to be representative of the descending rays of the sun, and most pyramids were faced with polished, highly reflective white limestone, in order to give them a brilliant appearance when viewed from a distance. </p>
+
+        <p>Pyramids were often also named in ways that referred to solar luminescence. For example, the formal name of the Bent Pyramid at Dahshur was The Southern Shining Pyramid, and that of Senusret II at El Lahun was Senusret Shines.</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Section 3">
+      <div class="landing__container">
+        <h2>Numbers of the pyramids</h2>
+        <p>In 1842, Karl Richard Lepsius produced the first modern list of pyramids – now known as the Lepsius list of pyramids – in which he counted 67. A great many more have since been discovered. As of November 2008, 118 Egyptian pyramids have been identified.The location of Pyramid 29, which Lepsius called the "Headless Pyramid", was lost for a second time when the structure was buried by desert sands after Lepsius's survey. It was found again only during an archaeological dig conducted in 2008.</p>
+
+        <p>Many pyramids are in a poor state of preservation or buried by desert sands. If visible at all, they may appear as little more than mounds of rubble. As a consequence, archaeologists are continuing to identify and study previously unknown pyramid structures.
+
+          The most recent pyramid to be discovered was that of Sesheshet at Saqqara, mother of the Sixth Dynasty pharaoh Teti, announced on 11 November 2008.</p>
+      </div>
+      
+    </section>
+    <section id="section4" data-nav="Section 4">
+      <div class="landing__container">
+        <h2 id="h2sec4">Construction techniques</h2>
+        <p>Constructing the pyramids involved moving huge quantities of stone. In 2013, papyri discovered at the Egyptian desert near the Red Sea by archaeologist Pierre Tallet revealed the Diary of Merer, an official of Egypt involved in transporting limestone along the Nile River. These papyri reveal processes in the building of the Great Pyramid at Giza, the tomb of the Pharaoh Khufu, just outside modern Cairo.</p>
+
+        <p>Rather than overland transport of the limestone used in building the pyramid, there is evidence—in the Diary of Merer and from preserved remnants of ancient canals and transport boats—that limestone blocks were transported along the Nile River.It is possible that quarried blocks were then transported to the construction site by wooden sleds, with sand in front of the sled wetted to reduce friction. Droplets of water created bridges between the grains of sand, helping them stick together.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+
+    <p>&copy Udacity</p>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
